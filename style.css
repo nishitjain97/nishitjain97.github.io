@@ -33,6 +33,7 @@ html,body {
     background-color: transparent;
     font-family: 'Josefin Sans';
     color: #FFFFFF;
+    z-index: 100;
 }
 
 .nav-logo {
