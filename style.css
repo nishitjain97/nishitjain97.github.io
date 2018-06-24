@@ -324,7 +324,7 @@ nav#top #links ul li {
 
 /*    Parallax     */
 .parallax {
-    height: 70%;
+    height: 50%;
     width: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -348,7 +348,92 @@ nav#top #links ul li {
 
 /*    Skills     */
 #skills {
-    height: 100%;
+    height: auto;
     width: 100%;
+    padding: 40px 0px;
+    font-family: 'Open Sans';
+}
+
+#skills #skills-head {
+    text-align: center
+}
+
+#skills #skills-content {
+    width: 60%;
+    margin: auto;
+    font-family: 'Josefin Sans';
+}
+
+#skills-content .sub-head {
+    margin-top: 10px;
+}
+
+#skills-content .sub-head-title {
+    margin: auto;
+    text-align: center;
+}
+
+#skills-content .sub-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#skills-content .sub-content .lang {
+    text-align: center;
+    margin: 40px 60px 50px 0px;
+    height: 150px;
+    position: relative;
+}
+
+#skills-content .lang img {
+    height: 100%;
+    transition: 0.2s ease-in-out;
+    filter: blur(0px);
+}
+
+#skills-content .lang .lang-title {
+    width: 100%;
+    position: absolute;
+    top: 110%;
+    transition: 0.1s ease-in-out;
+    font-size: 90%;
+    color: #212121;
+    box-shadow: 0px 5px 15px -5px #A3A3A3;
+}
+
+#skills-content .lang:hover .lang-title {
+    box-shadow: 0px 5px 5px -5px #A3A3A3;
+}
+
+#skills-content .lang:hover img {
+    filter: blur(5px);
+}
+
+#skill-button {
+    height: 40px;
+    width: 150px;
+    padding-top: 10px;
+    text-align: center;
+    margin-left: calc(48% - 75px);
+    transition: 0.3s ease-in-out;
+    border: 2px solid #006699;
+    background-color: #FFF;
+}
+
+#skill-button a {
+    text-decoration: none;
+    color: #006699;
+    transition: 0.3s ease-in-out;
+}
+
+#skill-button:hover {
+    border: 2px solid #FFF;
+    background-color: #006699;
+    cursor: pointer;
+}
+
+#skill-button:hover a {
+    color: #FFF;
 }
 /*    //Skills     */
