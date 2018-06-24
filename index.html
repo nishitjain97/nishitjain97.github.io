@@ -2,158 +2,135 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
-        <title>Nishit Jain | Programmer Supreme</title>
+        <meta name="description" content="Nishit Jain Programmer Portfolio Website"/>
+        <meta name="keywords" content="HTML5, CSS3, Javascript, jQuery, Portfolio, Programmer"/>
+        <meta name="author" content="Nishit Jain"/>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+        <title>Nishit Jain | Developer Portfolio</title>
+        
+        <link rel="icon" href="img/logo-black.png" type="image/png"/>
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans" rel="stylesheet">
-        <link rel="shorcut icon" href="img/logo2.png"/>
     </head>
     <body>
-        <!-- Navigation Bar -->
-        <nav class="nav">
-            <div id="nav-logo" class="nav-logo">
-                <a href="#" class="slide-section">
-                    <img src="img/logo.png"/>
-                    <div class="logo-text">
+        <nav id="top">
+            <div id="hamburger">
+                <div id="bar-1" class="bar"></div>
+                <div id="bar-2" class="bar"></div>
+                <div id="bar-3" class="bar"></div>
+            </div>
+            
+            <div id="nav-desktop">
+                <div id="title">
+                    <div id="logo">
+                        <img src="img/logo-black.png"/>
+                    </div>
+                    
+                    <div id="name">
                         <h1>Nishit Jain</h1>
                         <h2>Developer</h2>
                     </div>
-                </a>
-            </div>
-            <div id="nav-list" class="nav-list">
-                <ul>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
+                </div>
+            
+                <div id="links">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#">Journey</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">About Me</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        <!-- //Navigation Bar -->
         
-        <!-- Banner -->
-        <div class="banner" id="banner">
-            <div class="banner-inner">
-                <div class="banner-title">
-                    <h1>Hi, I'm <span class="name">Nishit</span>.</h1>
-                    <h2>I'm a logical thinker, problem solver,<br> and a cynical optimist.</h2>
-                    <h2>In other words, I'm a <span class="highlight">programmer</span>.</h2>
+        <nav id="overlay">
+            
+        </nav>
+        
+        <div id="banner">
+            <div id="banner-overlay">
+                <div id="banner-text">
+                    <h1>Hi, I'm <span>Nishit</span>.</h1>
+                    <h2>I'm a passionate, persistant and perspicacious programmer.</h2>
+                    <h2>I get things done!</h2>
+                </div>
+                
+                <div id="banner-buttons">
+                    <a href="#" id="button-1">
+                        <div class='button'>
+                            Projects
+                        </div>
+                    </a>
+                    
+                    <a href='#' id="button-2">
+                        <div class="button">
+                            Contact
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-        <!-- //Banner -->
         
-        <!-- About -->
-        <div class="section" id="about">
-            <div class="header">
-                <h1>My Expertise</h1>
+        <div id='about' class="shadowed-box">
+            <div id="about-left" class="about-half">
+                <img src="img/nishit-jain-image-2.JPG"/>
             </div>
-            <div class="section-content" id="expertise">
-<!--
-                Language section template:
-                
-                <div class="language">
-                    <div class="language-logo container">
-                        <div id="card">
-                            <div class="front">
-                                <img src="#"/>
-                            </div>
-                            <div class="back">
-                                <img src="#"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="language-header">
-                        <h2></h2>
-                    </div>
-                </div>
--->
-                
-                <div class="language">
-                    <div class="language-logo container">
-                        <div id="card">
-                            <div class="front">
-                                <img src="img/logos/html5.png"/>
-                            </div>
-                            <div class="back">
-                                <img src="img/logos/html5.png"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="language-header">
-                        <h2>HTML5</h2>
-                    </div>
+            
+            <div id="about-right" class="about-half">
+                <div id="about-head">
+                    <h1>About Me</h1>
                 </div>
                 
-                <div class="language">
-                    <div class="language-logo container">
-                        <div id="card">
-                            <div class="front">
-                                <img src="img/logos/css3.png"/>
-                            </div>
-                            <div class="back">
-                                <img src="img/logos/css3.png"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="language-header">
-                        <h2>CSS3</h2>
-                    </div>
+                <div id="about-content">
+                    <h2>
+                        A few years ago, a middle school boy found out that he was not cut out for being creative in the arts and crafts.
+                    </h2>
+                    <h2>
+                        In high school, he was introduced to the art of programming. Whether it was solving a problem or creating something new, all worked to kindle his sense of achievement.
+                    </h2>
+                    <h2>
+                        In college he realized he had found his niche! A field that integrated logical thinking and problem solving skills with creative and innovative outputs.
+                    </h2>
+                    <h2>
+                        He became a programmer!
+                    </h2>
                 </div>
                 
-                <div class="language">
-                    <div class="language-logo container">
-                        <div id="card">
-                            <div class="front">
-                                <img src="img/logos/js.png"/>
-                            </div>
-                            <div class="back">
-                                <img src="img/logos/js.png"/>
-                            </div>
+                <div id="about-more">
+                    <a href="#" id="about-button">
+                        <div class="button">
+                            Know More
                         </div>
-                    </div>
-                    <div class="language-header">
-                        <h2>JavaScript</h2>
-                    </div>
-                </div>
-                
-                <div class="language">
-                    <div class="language-logo container">
-                        <div id="card">
-                            <div class="front">
-                                <img src="img/logos/java.png"/>
-                            </div>
-                            <div class="back">
-                                <img src="img/logos/java.png"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="language-header">
-                        <h2>Java</h2>
-                    </div>
-                </div>
-                
-                <div class="language">
-                    <div class="language-logo container">
-                        <div id="card">
-                            <div class="front">
-                                <img src="img/logos/bootstrap.png"/>
-                            </div>
-                            <div class="back">
-                                <img src="img/logos/bootstrap.png"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="language-header">
-                        <h2>Bootstrap</h2>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
-        <!-- //About -->
+        
+        <div id='parallax-1' class="parallax">
+            <div class="inner-parallax"></div>
+        </div>
+        
+        <div id='skills'>
+            
+        </div>
+        
+        <div id='parallax-2' class="parallax">
+            <div class="inner-parallax"></div>
+        </div>
+        
+        <footer>
+            
+        </footer>
     </body>
 </html>

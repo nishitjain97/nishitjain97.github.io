@@ -7,17 +7,15 @@ Color palette:
     Red: #FF0000 (255,0,0)
     White: #FFFFFF (255,255,255)
     
-Headers:
-    About:
-        -Ideology
-        -Languages:
-            -Percentages
-        -Origin
-    Portfolio:
-        -Main projects
-        -Personal projects
-    Contact:
-        -Mobile
-        -Address
-        -Email
-        -Form
+What I would like to convey:
+	- My projects
+		- Machine Learning
+		- Web Development
+		- Others
+	- Skills
+		- Python3
+		- Java
+		- C++
+		- HTML5
+		- CSS3
+		- JavaScript
