@@ -39,6 +39,7 @@ h3 {
 nav {
     font-family: 'Josefin Sans';
     position: relative;
+    z-index: 100;
 }
 
 nav#top {
@@ -337,10 +338,17 @@ nav#top #links ul li {
 }
 
 #parallax-1 {
-    /*background-image: url(img/parallax-wallpaper-1.jpg);*/
+    background-image: url(img/parallax-wallpaper-1.jpg);
 }
 
 #parallax-2 {
-    /*background-image: url('img/parallax-wallpaper-2.jpg');*/
+    background-image: url('img/parallax-wallpaper-2.jpg');
 }
 /*    //Parallax     */
+
+/*    Skills     */
+#skills {
+    height: 100%;
+    width: 100%;
+}
+/*    //Skills     */
