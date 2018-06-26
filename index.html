@@ -5,21 +5,21 @@
         <meta name="description" content="Nishit Jain Programmer Portfolio Website"/>
         <meta name="keywords" content="HTML5, CSS3, Javascript, jQuery, Portfolio, Programmer"/>
         <meta name="author" content="Nishit Jain"/>
-        <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
-        <title>Nishit Jain | Developer Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Home | Nishit Jain | Developer Portfolio</title>
         
         <link rel="icon" href="img/logo-black.png" type="image/png"/>
-        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/index-style.css"/>
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="script.js">
+        </script>
     </head>
     <body>
         <nav id="top">
-            <div id="hamburger">
-                <div id="bar-1" class="bar"></div>
-                <div id="bar-2" class="bar"></div>
-                <div id="bar-3" class="bar"></div>
-            </div>
-            
             <div id="nav-desktop">
                 <div id="title">
                     <div id="logo">
@@ -53,6 +53,14 @@
                 </div>
             </div>
         </nav>
+        
+        <a href="#" id="a-burger">
+            <div id="hamburger">
+                <div id="bar-1" class="bar"></div>
+                <div id="bar-2" class="bar"></div>
+                <div id="bar-3" class="bar"></div>
+            </div>
+        </a>
         
         <nav id="overlay">
             
@@ -121,7 +129,7 @@
             <div class="inner-parallax"></div>
         </div>
         
-        <div id='skills'>
+        <div id='skills' class="shadowed-box">
             <div id="skills-head">
                 <h1>Skills</h1>
             </div>
@@ -256,7 +264,44 @@
         </div>
         
         <footer>
+            <div id="contact">
+                <div id="email">
+                    <a href="nishitjain1997@gmail.com">
+                        <h1>
+                            <i class="far fa-envelope"></i>
+                            <i class="far fa-envelope-open"></i>
+                            nishitjain1997@gmail.com
+                        </h1>
+                    </a>
+                </div>
+                
+                <div id="button">
+                    <a href="#">
+                        <h1>Contact</h1>
+                    </a>
+                </div>
+            </div>
             
+            <div id="social">
+                <h1>
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-snapchat-ghost"></i>
+                    </a>
+                </h1>
+            </div>
+            
+            <div id="credits">
+                Website designed and created by: Nishit Jain (Me)
+            </div>
         </footer>
     </body>
 </html>
