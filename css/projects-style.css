@@ -1,0 +1,119 @@
+/*
+    Color palette:
+    Black: #000000 (0,0,0)
+    Dark Grey: #212121 (33,33,33)
+    Light Grey: #A3A3A3 (163,163,163)
+    Blue: #006699	(63,203,203)
+    Pink: #FF0065	(255,0,101)
+    White: #FFFFFF (255,255,255)
+*/
+/*    Banner     */
+#banner {
+    height: 100%;
+    width: 100%;
+    background-image: url('../img/website/projects-banner-macbook.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Open Sans';
+}
+
+#banner-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#banner-text {
+    height: 300px;
+    width: 50%;
+    position: relative;
+    top: calc(50% - 120px);
+    left: 25%;
+}
+
+#banner-text h1 {
+    font-size: 250%;
+    color: #FFF;
+}
+
+#banner-text h1 span {
+    font-size: 100%;
+    color: #006699;
+}
+
+#banner-text h2 {
+    font-size: 180%;
+    line-height: 45px;
+    color: #A3A3A3;
+}
+/*    //Banner     */
+
+#projects {
+    background-color: #FFF;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    height: auto;
+    font-family: 'Open Sans';
+}
+
+#projects-wrap {
+    height: auto;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+}
+
+.project-item {
+    height: auto;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.project-item:nth-child(even) .project-title {
+    text-align: right;
+}
+
+.project-item:nth-child(even) .project-content {
+    flex-direction: row-reverse;
+}
+
+.project-title h2 {
+    color: #006699;
+}
+
+.project-content {
+    margin-top: 20px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+
+.project-image {
+    height: auto;
+    width: 45%;
+}
+
+.project-image img {
+    height: auto;
+    width: 100%;
+    transition: 0.1s ease-in-out;
+    box-shadow: 0px 20px 20px -15px grey;
+    transform: translate(0px, 0px);
+}
+
+.project-image img:hover {
+    box-shadow: 0px 20px 20px -10px grey;
+    transform: translate(0px, -2px);
+}
+
+.project-desc {
+    width: 45%;
+}
+
+.project-desc span {
+    text-shadow: 0px 1px black;
+}
