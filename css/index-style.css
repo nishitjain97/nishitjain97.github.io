@@ -11,7 +11,7 @@
 #banner {
     height: 100%;
     width: 100%;
-    background-image: url('../img-min/index-banner-wallpaper-macbook.jpg');
+    background-image: url('../img/website/index-banner-wallpaper-macbook.jpg');
     background-size: cover;
     background-size: 150%;
     background-attachment: fixed;
@@ -201,11 +201,11 @@
 }
 
 #parallax-1 {
-    background-image: url(../img-min/parallax-wallpaper-1.jpg);
+    background-image: url(../img/website/parallax-wallpaper-1.jpg);
 }
 
 #parallax-2 {
-    background-image: url('../img-min/parallax-wallpaper-2.jpg');
+    background-image: url('../img/website/parallax-wallpaper-2.jpg');
     background-position: middle;
 }
 /*    //Parallax     */
