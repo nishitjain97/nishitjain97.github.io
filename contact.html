@@ -66,7 +66,7 @@
             <div id="contact-content">
                 <div id="contact-info" class="half">
                     <div class="header">
-                        <h2>Get In Touch</h2>
+                        <h2>Get In Touch <i class="icon-1 fas fa-phone"></i><i class="icon-2 fas fa-phone-volume"></i></h2>
                     </div>
                     
                     <div class="info" id="email">
@@ -101,30 +101,15 @@
                 </div>
                 <div id="contact-form" class="half">
                     <div class="header">
-                        <h2>Drop A Mail</h2>
+                        <h2>Drop A Mail <i class="icon-1 far fa-paper-plane"></i><i class='icon-2 fas fa-paper-plane'></i></h2>
                     </div>
                     <form id="myForm" method="POST" action="https://script.google.com/macros/s/AKfycbzKhLiSSClfXEQZaJmNystdIPCNAtc8C0vSkqz_yQ/exec">
-                        <div class="form-element">
-                            <div class="title">
-                                <h2>Name</h2>
-                            </div>
-                            <input type="text" name="name" placeholder="Name"/>
-                        </div>
-                        
-                        <div class="form-element">
-                            <div class="title">
-                                <h2>Email</h2>
-                            </div>
-                            <input type="email" name="email" placeholder="Email"/>
-                        </div>
-                        
-                        <div class="form-element">
-                            <div class="title">
-                                <h2>Message</h2>
-                            </div>
+                        <div class="form-content">
+                            <input type="text" name="name" placeholder="Name" required/>
+                            <input type="email" name="email" placeholder="Email" required/>
+                            
                             <textarea placeholder="Message" name="message"></textarea>
                         </div>
-                        
                         <input type="submit" value="Submit"/>
                     </form>
                 </div>
