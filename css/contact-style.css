@@ -13,20 +13,26 @@
 }
 
 /*    Banner     */
+html {
+    height: 100%;
+}
+
 body {
-    background-image: url('../img/website/contact-banner-macbook.png');
+    height: 100%;
 }
 
 #banner {
-    height: 80%;
+    height: 100%;
     width: 100%;
     font-family: 'Open Sans';
     background-size: cover;
-    padding-top: 120px;
+    background-image: url('../img/website/contact-banner-macbook.png');
 }
 
 #contact-content {
-    height: 90%;
+    position: relative;
+    top: 15%;
+    height: 80%;
     width: 85%;
     margin: auto;
     display: flex;
