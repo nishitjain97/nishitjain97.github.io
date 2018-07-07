@@ -40,7 +40,7 @@ h3 {
 nav {
     font-family: 'Josefin Sans';
     position: relative;
-    z-index: 100;
+    z-index: 10;
 }
 
 nav#top {
@@ -156,8 +156,9 @@ a#a-burger {
     position: fixed;
     top: 30px;
     left: 60px;
-    z-index: 2;
+    z-index: 15;
     transition: 0.2s ease-in-out;
+    display: none;
 }
 
 a#a-burger.burger-left {
@@ -173,6 +174,7 @@ a#a-burger.burger-left {
     flex-flow: column;
     justify-content: space-between;
     padding: 5px;
+    transition: 0.2s ease-in-out;
 }
 
 #hamburger .bar {
@@ -182,6 +184,8 @@ a#a-burger.burger-left {
     background-color: #212121;
     transform: skewX(30deg);
     transition: 0.2s ease-in-out;
+    transform-origin: center;
+    opacity: 1;
 }
 
 #hamburger:hover .bar {
@@ -204,6 +208,71 @@ a#a-burger.burger-left {
 #hamburger:hover #bar-3 {
     margin-left: 0%;
     width: 100%;
+}
+
+#hamburger.no-bord {
+    border-color: transparent;
+}
+
+#hamburger #bar-2.hide {
+    opacity: 0;
+}
+
+#hamburger #bar-1.turnleft {
+    width: 100%;
+    transform: rotateZ(-45deg);
+    transform-origin: right;
+}
+
+#hamburger #bar-3.turnright {
+    width: 100%;
+    margin-left: 0%;
+    transform: rotateZ(45deg) translate(5px, 5px);
+    transform-origin: right;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 12;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: 0.3s ease-in-out;
+}
+
+.overlay-content {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 20%;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family: 'Open Sans';
+}
+
+.overlay-content a {
+    padding: 10px 0px;
+    text-decoration: none;
+    color: #A3A3A3;
+    font-size: 200%;
+    transition: all 0.3s ease-in-out, color 0.1s ease-in-out;
+    position: relative;
+    left: -100%;
+    opacity: 0;
+}
+
+.overlay-content a.vis {
+    opacity: 1;
+    left: 0%;
+}
+
+.overlay-content a:hover {
+    color: #FFF;
 }
 
 /*    //Navigation     */

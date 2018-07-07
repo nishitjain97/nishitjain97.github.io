@@ -14,9 +14,6 @@
         <link rel="stylesheet" type="text/css" href="./css/projects-style.css"/>
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-        
-        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="script.js"></script>
     </head>
     <body>
         <nav id="top">
@@ -35,36 +32,42 @@
                 <div id="links">
                     <ul>
                         <li>
-                            <a href="#">Home</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a href="#">Projects</a>
+                            <a href="javascript:void(0)">Projects</a>
                         </li>
                         <li>
-                            <a href="#">Journey</a>
+                            <a href="journey.html">Journey</a>
                         </li>
                         <li>
-                            <a href="#">Contact</a>
+                            <a href="contact.html">Contact</a>
                         </li>
                         <li>
-                            <a href="#">About Me</a>
+                            <a href="about.html">About Me</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
         
-        <a href="#" id="a-burger">
+        <nav id="fs-nav" class="overlay">
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="#">Projects</a>
+                <a href="journey.html">Journey</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About Me</a>
+            </div>
+        </nav>
+        
+        <a href="javascript:void(0)" id="a-burger">
             <div id="hamburger">
                 <div id="bar-1" class="bar"></div>
                 <div id="bar-2" class="bar"></div>
                 <div id="bar-3" class="bar"></div>
             </div>
         </a>
-        
-        <nav id="overlay">
-            
-        </nav>
         
         <div id="banner">
             <div id="banner-overlay">
@@ -168,5 +171,8 @@
                 Website designed and created by: Nishit Jain (Me)
             </div>
         </footer>
+        
+        <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="./js/script.js"></script>
     </body>
 </html>

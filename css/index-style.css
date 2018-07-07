@@ -197,7 +197,7 @@
 .inner-parallax {
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0,0,0,.5);
 }
 
 #parallax-1 {
@@ -206,7 +206,6 @@
 
 #parallax-2 {
     background-image: url('../img/website/parallax-wallpaper-2.jpg');
-    background-position: middle;
 }
 /*    //Parallax     */
 
