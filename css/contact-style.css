@@ -13,11 +13,14 @@
 }
 
 /*    Banner     */
+body {
+    background-image: url('../img/website/contact-banner-macbook.png');
+}
+
 #banner {
     height: 80%;
     width: 100%;
     font-family: 'Open Sans';
-    background-image: url('../img/website/contact-banner-macbook.png');
     background-size: cover;
     padding-top: 120px;
 }
