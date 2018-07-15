@@ -1,0 +1,142 @@
+/*
+    Color palette:
+    Black: #000000 (0,0,0)
+    Dark Grey: #212121 (33,33,33)
+    Light Grey: #A3A3A3 (163,163,163)
+    Blue: #006699	(63,203,203)
+    Pink: #FF0065	(255,0,101)
+    White: #FFFFFF (255,255,255)
+*/
+
+html {
+}
+
+body {
+    height: auto;
+    background-color: transparent;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+#banner {
+    height: 400px;
+    width: 100%;
+    color: #FFF;
+    font-family: 'Open Sans';
+}
+
+#banner-text {
+    height: 150px;
+    position: relative;
+    top: 50%;
+    text-align: center;
+}
+
+#banner-text h1 {
+    font-size: 250%;
+    color: #FFF;
+}
+
+#banner-text h1 span {
+    font-size: 100%;
+    color: #212121;
+}
+
+.content {
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.content::before {
+    border-left: 2px dashed #A3A3A3;
+    content: '';
+    height: 83%;
+    width: 2px;
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 1px);
+}
+
+.content-wrapper {
+    position: relative;
+}
+
+.node {
+    width: calc(50% + 60px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    margin-top: 60px;
+    font-family: 'Josefin Sans';
+}
+
+.node.right {
+    left: calc(50% - 70px);
+}
+
+.node.left {
+    left: 10px;
+    flex-flow: row-reverse;
+}
+
+.node .date {
+    width: 70px;
+    position: relative;
+}
+
+.node.left .date {
+    text-align: right;
+}
+
+.node .connect {
+    border: 1px solid white;
+    height: 0px;
+    width: 10vw;
+    position: relative;
+}
+
+.node.left .connect::after, .node.right .connect::before {
+    content: '';
+    border: 1px solid white;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #313131;
+    position: absolute;
+    top: -8.5px;
+}
+
+.node.left .connect::after {
+    right: -8.5px;
+}
+
+.node.right .connect::before {
+    left: -9px;
+}
+
+.node .details {
+    border: 1px solid white;
+    padding: 10px;
+    padding-top: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    color: #A3A3A3;
+    box-shadow: 0px 5px 10px -5px black;
+    transform: translate(0px, 0px);
+    transition: 0.1s ease-in-out;
+}
+
+.node .details:hover {
+    transform: translate(0px, -5px);
+    box-shadow: 0px 10px 15px -10px black;
+}
+
+.node .details .detail-tab {
+    margin-bottom: 5px;
+}
+
+.node .details .detail-tab:nth-child(1) {
+    color: #FFF;
+}
