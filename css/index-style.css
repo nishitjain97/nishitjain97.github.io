@@ -25,15 +25,10 @@
 }
 
 #banner-text {
-    height: 300px;
-    width: 50%;
     position: relative;
-    top: calc(50% - 120px);
-    left: 25%;
 }
 
 #banner-text h1 {
-    font-size: 250%;
     color: #FFFFFF;
 }
 
@@ -43,8 +38,6 @@
 }
 
 #banner-text h2 {
-    font-size: 180%;
-    line-height: 45px;
     color: #A3A3A3;
 }
 
@@ -58,8 +51,6 @@
 
 #banner-buttons a {
     display: block;
-    height: 90%;
-    width: 120px;
     display: flex;
     text-decoration: none;
     position: absolute;
@@ -70,7 +61,7 @@
     left: 0;
     border: 2px solid #006699;
     background-color: #006699;
-    color: black;
+    color: #222;
     transform: scale(1);
     transition: 0.2s ease-in-out;
 }
@@ -97,22 +88,19 @@
     height: 80%;
     width: 100%;
     text-align: center;
-    padding-top: 9px;
 }
 /*    //Banner     */
 
 /*    About     */
 #about {
-    height: 100%;
     width: 100%;
     display: flex;
     font-family: 'Open Sans';
     background-color: #FFF;
+    color: #333;
 }
 
 #about .about-half {
-    height: 100%;
-    width: 50%;
     overflow: hidden;
 }
 
@@ -121,7 +109,6 @@
 }
 
 #about #about-head h1 {
-    width: 180px;
     text-align: center;
     margin: auto;
     position: relative;
@@ -161,8 +148,6 @@
 
 #about #about-more a {
     display: block;
-    height: 35px;
-    width: 130px;
     text-align: center;
     padding-top: 5px;
     text-decoration: none;
@@ -219,13 +204,14 @@
 }
 
 #skills #skills-head {
-    text-align: center
+    text-align: center;
 }
 
 #skills #skills-content {
     width: 60%;
     margin: auto;
     font-family: 'Josefin Sans';
+    color: #333;
 }
 
 #skills-content .sub-head {
@@ -235,6 +221,7 @@
 #skills-content .sub-head-title {
     margin: auto;
     text-align: center;
+    color: #333;
 }
 
 #skills-content .sub-content {
@@ -245,8 +232,6 @@
 
 #skills-content .sub-content .lang {
     text-align: center;
-    margin: 40px 60px 50px 0px;
-    height: 150px;
     position: relative;
 }
 
@@ -261,8 +246,7 @@
     position: absolute;
     top: 110%;
     transition: 0.1s ease-in-out;
-    font-size: 90%;
-    color: #212121;
+    color: #333;
     box-shadow: 0px 5px 15px -5px #A3A3A3;
 }
 
@@ -275,11 +259,7 @@
 }
 
 #skill-button {
-    height: 40px;
-    width: 150px;
-    padding-top: 10px;
     text-align: center;
-    margin-left: calc(48% - 75px);
     transition: 0.3s ease-in-out;
     border: 2px solid #006699;
     background-color: #FFF;
@@ -301,3 +281,321 @@
     color: #FFF;
 }
 /*    //Skills     */
+
+@media only screen and (max-width: 600px) {
+    /*    Phones     */
+    
+    body {
+        height: 50%;
+    }
+    
+    #banner-text {
+        left: 15%;
+        height: 220px;
+        width: 70%;
+        top: 25%;
+    }
+    
+    #banner-text h1 {
+        font-size: 120%;
+    }
+    
+    #banner-text h2 {
+        font-size: 90%;
+        line-height: 30px;
+    }
+
+    #banner-buttons {
+        height: 50px;
+        width: 200px;
+        top: 0%;
+        left: 15%;
+    }
+
+    #banner-buttons a {
+        height: 60%;
+        width: 80px;
+    }
+    
+    #banner-buttons .button {
+        padding-top: 4px;
+        font-size: 80%;
+    }
+    
+    #about {
+        height: auto;
+        flex-direction: column-reverse;
+    }
+    
+    #about .about-half {
+        height: auto;
+        width: 100%;
+    }
+    
+    #about #about-left {
+        height: 420px;
+    }
+    
+    #about #about-left img {
+    }
+    
+    #about #about-right {
+        padding-bottom: 20px;
+        width: 85%;
+        margin: auto;
+    }
+    
+    #about #about-head h1 {
+        font-size: 100%;
+        width: 130px;
+        padding-bottom: 5px;
+    }
+    
+    #about #about-content h2 {
+        font-size: 80%;
+    }
+    
+    #about #about-more a {
+        height: 25px;
+        width: 100px;
+    }
+    
+    #about #about-more .button {
+        font-size: 15px;
+    }
+    
+    #skills #skills-head {
+        font-size: 60%;
+    }
+    
+    #skills-content .sub-head-title h2 {
+        font-size: 80%;
+    }
+    
+    #skills-content .sub-content .lang {
+        height: 100px;
+        margin: 40px 0px 50px 0px;
+    }
+    
+    #skills-content .lang .lang-title {
+        font-size: 70%;
+    }
+    
+    #skill-button {
+        height: 30px;
+        width: 120px;
+        padding-top: 5px;
+        margin: auto;
+    }
+    
+    #skill-button a div {
+        font-size: 90%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    /*    Tablets and large phones     */
+    
+    
+    body {
+        height: 70%;
+    }
+    
+    #banner-text {
+        left: 20%;
+        height: 300px;
+        width: 70%;
+        top: calc(50% - 100px);
+    }
+    
+    #banner-text h1 {
+        font-size: 150%;
+    }
+    
+    #banner-text h2 {
+        font-size: 120%;
+        line-height: 40px;
+    }
+
+    #banner-buttons {
+        height: 50px;
+        width: 250px;
+        top: 10%;
+        left: 20%;
+    }
+
+    #banner-buttons a {
+        height: 70%;
+        width: 100px;
+    }
+    
+    #banner-buttons .button {
+        padding-top: 5px;
+        font-size: 90%;
+    }
+    
+    #about {
+        height: auto;
+        flex-direction: column-reverse;
+    }
+    
+    #about .about-half {
+        height: auto;
+        width: 100%;
+    }
+    
+    #about #about-left {
+        height: 500px;
+    }
+    
+    #about #about-left img {
+        top: -250px;
+    }
+    
+    #about #about-right {
+        padding-bottom: 20px;
+        width: 80%;
+        margin: auto;
+    }
+    
+    #about #about-head h1 {
+        font-size: 130%;
+        width: 130px;
+        padding-bottom: 5px;
+    }
+    
+    #about #about-content h2 {
+        font-size: 100%;
+    }
+    
+    #about #about-more a {
+        height: 30px;
+        width: 110px;
+    }
+    
+    #about #about-more .button {
+        font-size: 18px;
+    }
+    
+    #skills #skills-head {
+        font-size: 80%;
+    }
+    
+    #skills-content .sub-head-title h2 {
+        font-size: 100%;
+    }
+    
+    #skills-content .sub-content .lang {
+        height: 130px;
+        margin: 40px 0px 50px 0px;
+    }
+    
+    #skills-content .lang .lang-title {
+        font-size: 80%;
+    }
+    
+    #skill-button {
+        height: 30px;
+        width: 135px;
+        padding-top: 5px;
+        margin: auto;
+    }
+    
+    #skill-button a div {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /*    Rest     */
+    
+    body {
+        height: 631px;
+    }
+    
+    #banner-text {
+        left: 25%;
+        height: 300px;
+        width: 50%;
+        top: calc(50% - 120px);
+    }
+    
+    #banner-text h1 {
+        font-size: 180%;
+    }
+    
+    #banner-text h2 {
+        font-size: 150%;
+        line-height: 45px;
+    }
+
+    #banner-buttons {
+        height: 50px;
+        width: 270px;
+        top: 20%;
+        left: 25%;
+    }
+
+    #banner-buttons a {
+        height: 90%;
+        width: 120px;
+    }
+    
+    #banner-buttons .button {
+        padding-top: 9px;
+        font-size: 100%;
+    }
+    
+    #about {
+        height: 51vw;
+    }
+    
+    #about .about-half {
+        height: 100%;
+        width: 50%;
+    }
+    
+    #about #about-head h1 {
+        font-size: 180%;
+        width: 180px;
+        padding-bottom: 3px;
+    }
+    
+    #about #about-content h2 {
+        font-size: 2vw;
+    }
+    
+    #about #about-more a {
+        height: 35px;
+        width: 130px;
+        font-size: 20px;
+    }
+    
+    #skills #skills-head {
+        font-size: 100%;
+    }
+    
+    #skills-content .sub-head-title h2 {
+        font-size: 120%;
+    }
+    
+    #skills-content .sub-content .lang {
+        height: 150px;
+        margin: 40px 60px 50px 0px;
+    }
+    
+    #skills-content .lang .lang-title {
+        font-size: 90%;
+    }
+    
+    #skill-button {
+        height: 40px;
+        width: 150px;
+        padding-top: 10px;
+        margin-left: calc(48% - 75px);
+    }
+    
+    #skill-button a div {
+        font-size: 120%;
+    }
+}

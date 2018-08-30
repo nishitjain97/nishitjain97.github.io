@@ -1,5 +1,11 @@
-function init() {
-    $("a#a-burger").addClass("burger-left");
+function init(windowWidth) {
+    if(windowWidth > 600) {
+        $("a#a-burger").addClass("burger-left");
+    }
+    else {
+        $("a#a-burger").removeClass("burger-left");
+    }
+    
     $("a#a-burger").css('display', 'block');
     $(".overlay-content").css('height', '0%');
 }
@@ -45,7 +51,20 @@ $(document).ready(function() {
     var bannerBottom = bannerTop + $("#banner").height();
     var fsToggle = false;
     
-    init();
+    var windowWidth = $(window).width();
+    
+    $(window).resize(function() {
+        windowWidth = $(window).width();
+        
+        if(windowWidth < 600) {
+            $("a#a-burger").removeClass("burger-left");
+        }
+        else {
+            $("a#a-burger").addClass("burger-left");
+        }
+    });
+    
+    init(windowWidth);
     
     $("a#a-burger").click(function() {
         fsToggle = toggleNav(fsToggle);
@@ -54,17 +73,19 @@ $(document).ready(function() {
     $(document).scroll(function() {
         var screenTop = $(document).scrollTop();
         
-        if(screenTop > bannerBottom - 150) {
-            $("#top").addClass("nav-anime");
-            $("a#a-burger").removeClass("burger-left");
-        }
-        else {
-            $("#top").removeClass("nav-anime");
-            $("a#a-burger").addClass("burger-left");
-            
-            if(fsToggle) {
-                fsToggle = toggleNav(fsToggle);
+        if(windowWidth > 600) {
+            if(screenTop > bannerBottom - 150) {
+                $("#top").addClass("nav-anime");
+                $("a#a-burger").removeClass("burger-left");
             }
+            else {
+                $("#top").removeClass("nav-anime");
+                $("a#a-burger").addClass("burger-left");
+            }
+        }
+            
+        if(fsToggle) {
+            fsToggle = toggleNav(fsToggle);
         }
     });
 });
