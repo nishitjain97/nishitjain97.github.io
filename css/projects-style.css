@@ -9,7 +9,6 @@
 */
 /*    Banner     */
 #banner {
-    height: 100%;
     width: 100%;
     background-image: url('../img/website/projects-banner-macbook.jpg');
     background-size: cover;
@@ -24,15 +23,14 @@
 }
 
 #banner-text {
-    height: 300px;
+    height: 250px;
     width: 50%;
     position: relative;
-    top: calc(50% - 120px);
+    top: calc(50% - 100px);
     left: 25%;
 }
 
 #banner-text h1 {
-    font-size: 250%;
     color: #FFF;
 }
 
@@ -42,7 +40,6 @@
 }
 
 #banner-text h2 {
-    font-size: 180%;
     line-height: 45px;
     color: #A3A3A3;
 }
@@ -116,4 +113,151 @@
 
 .project-desc span {
     text-shadow: 0px 1px black;
+}
+
+@media only screen and (max-width: 600px) {
+    /*    Phones     */
+    #banner {
+        height: 60%;
+    }
+    
+    #banner-text {
+        height: 200px;
+        top: calc(50% - 70px);
+    }
+    
+    #banner-text h1 {
+        font-size: 150%;
+    }
+    
+    #banner-text h2 {
+        font-size: 100%;
+    }
+    
+    .project-item {
+        padding-bottom: 40px;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .project-item .project-title h1 {
+        font-size: 120%;
+    }
+    
+    .project-item .project-title h2 {
+        font-size: 80%;
+    }
+    
+    .project-item .project-title {
+        text-align: center;
+    }
+    
+    .project-item:nth-child(even) .project-title {
+        text-align: center;
+    }
+    
+    .project-item .project-content, .project-item:nth-child(even) .project-content {
+        flex-direction: column;
+    }
+    
+    .project-item .project-image {
+        margin: auto;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+    
+    .project-item .project-desc {
+        width: 100%;
+    }
+    
+    .project-item .project-desc h3 {
+        font-size: 80%;
+    }
+    
+    .project-item .project-desc span {
+        font-size: 100%;
+    }
+    
+    .project-item .project-desc h3 a {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    /*    Tablets and large phones     */
+    
+    #banner {
+        height: 90%;
+    }
+    
+    #banner-text {
+        height: 200px;
+        top: calc(50% - 100px);
+    }
+    
+    #banner-text h1 {
+        font-size: 200%;
+    }
+    
+    #banner-text h2 {
+        font-size: 150%;
+    }
+    
+    .project-item {
+        padding-bottom: 40px;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .project-item .project-title h1 {
+        font-size: 150%;
+    }
+    
+    .project-item .project-title h2 {
+        font-size: 100%;
+    }
+    
+    .project-item .project-title {
+        text-align: center;
+    }
+    
+    .project-item:nth-child(even) .project-title {
+        text-align: center;
+    }
+    
+    .project-item .project-content, .project-item:nth-child(even) .project-content {
+        flex-direction: column;
+    }
+    
+    .project-item .project-image {
+        margin: auto;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+    
+    .project-item .project-desc {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /*    Rest     */
+    
+    #banner {
+        height: 100%;
+    }
+    
+    #banner-text h1 {
+        font-size: 250%;
+    }
+    
+    #banner-text h2 {
+        font-size: 200%;
+    }
+    
+    .project-item .project-title h1 {
+        font-size: 180%;
+    }
+    
+    .project-item .project-title h2 {
+        font-size: 120%;
+    }
 }

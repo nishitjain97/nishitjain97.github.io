@@ -50,7 +50,6 @@
 }
 
 #banner-buttons a {
-    display: block;
     display: flex;
     text-decoration: none;
     position: absolute;
@@ -233,6 +232,14 @@
 #skills-content .sub-content .lang {
     text-align: center;
     position: relative;
+    transition: 0.2s ease-in-out;
+    top: 0px;
+    opacity: 1;
+}
+
+#skills-content .sub-content .lang.down {
+    top: 30px;
+    opacity: 0;
 }
 
 #skills-content .lang img {
@@ -390,6 +397,10 @@
     
     #skill-button a div {
         font-size: 90%;
+    }
+    
+    .parallax {
+        display: none;
     }
 }
 

@@ -264,7 +264,7 @@
         <footer>
             <div id="contact">
                 <div id="email">
-                    <a href="nishitjain1997@gmail.com">
+                    <a href="mailto:nishitjain1997@gmail.com">
                         <h1>
                             <i class="far fa-envelope"></i>
                             <i class="far fa-envelope-open"></i>
@@ -304,6 +304,28 @@
         
         <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="./js/script.js">
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#skills-content .sub-content .lang").each(function(e) {
+                    var timing = 200 * (e % 3);
+                    $(this).css('transition-delay', timing + 'ms');
+                });
+                
+                $(document).scroll(function() {
+                    var screenTop = $(document).scrollTop();
+                    var screenBottom = screenTop + $(window).height();
+                    
+                    $("#skills-content .sub-content .lang").each(function(e) {
+                        if(screenBottom > ($(this).offset().top + 150)) {
+                            $(this).removeClass('down');
+                        }
+                        else {
+                            $(this).addClass('down');
+                        }
+                    });
+                });
+            });
         </script>
     </body>
 </html>
